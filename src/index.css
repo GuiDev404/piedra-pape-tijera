@@ -1,0 +1,109 @@
+:root {
+  --muted: #cbcbcb;
+  --white: #ffffff;
+  --bg-app: #181818;
+
+  --bg-card: #000000;
+
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font);
+
+  background-color: var(--bg-app);
+  color: var(--white);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+header .description {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+  background-color: var(--bg-card);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  height: 200px;
+  text-align: center;
+}
+
+.card__options {
+  min-height: 100px;
+}
+
+.card__options__user {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card__options__user div {
+  border-radius: 50%;
+  padding: .5rem;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+ 
+.card__options__user div:hover {
+  background: var(--bg-app) !important;
+  transform: scale(1.1);
+}
+
+.card__option {
+  width: 100px;
+  height: 100px;
+}
+
+.card__option img {
+  width: 100%;
+}
+
+.card__option__selected {
+  background: #5c5c5c;
+}
+
+.resultado {
+  width: 75px;
+  text-align: center;
+  color: var(--muted);
+  font-weight: bold;
+} 
+
